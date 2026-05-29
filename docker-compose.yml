@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  generator:
+    build: .
+    volumes:
+      - .:/app/shared
+    # マウントした共有ディレクトリに動画を書き出し、必要に応じてホスト側の入力音声ファイルを渡せるようにします。
+    # 実行例: docker-compose run generator --input /app/shared/your_song.mp3 --output /app/shared/output_v2.mp4
+    command: ["--output", "/app/shared/output_v2.mp4", "--instrument", "synth"]
