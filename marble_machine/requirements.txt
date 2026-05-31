@@ -1,0 +1,13 @@
+pygame>=2.6
+pymunk>=7.0
+librosa>=0.11
+music21>=9.1
+opencv-python>=4.8
+numpy>=1.26
+pillow>=10.0
+yt-dlp>=2024.0
+ffmpeg-python>=0.2
+pretty_midi>=0.2.10
+scipy>=1.11
+anthropic>=0.40
+requests>=2.31
